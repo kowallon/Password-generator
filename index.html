@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,600;1,200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Generate a <span class="green">random password</span></h1> <br>
+
+    <h3>Never use an insecure password again</h3>
+
+    <div class="boxes">
+        <input type="checkbox" id="special" name="special" value="Bike" onclick="excSpecial()">
+        <label for="special" class="check-text">Exclude special characters</label>
+
+        <input type="checkbox" id="numbers" name="num" value="Bike" onclick="excNums()">
+        <label for="num" class="check-text">Exclude numbers</label>
+    </div>
+
+
+    <button onclick="generatePasswords()">Generate password</button>
+
+
+    <div class="output-wrapper">
+        <div class="pass" id="pas-box1">
+            <p class="pass-text" id="pass1" onclick="copy()"></p>
+        </div>
+
+        <div class="pass" id="pas-box2">
+            <p class="pass-text" id="pass2" onclick="copy2()"></p>
+        </div>
+    </div>
+    
+    
+
+
+    <script src="script.js"></script>
+</body>
+</html>
